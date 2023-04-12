@@ -1,0 +1,131 @@
+
+body
+{
+    background-color: skyblue;
+}
+.container{
+ 
+    margin: 50px 160px;
+}
+.task{
+color: white;
+font-weight: bold;
+font-size: 35px;
+}
+.list{
+   color: white;
+   font-size: 25px; 
+}
+.addbtn{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;;
+}
+.task-bar{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.card-popup1{
+
+}
+.add-btn{
+background-color: orange;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+}
+#text-input{
+    width: 280px;
+    height: 34px;
+    margin-top: 20px;
+    border-radius: 5px;   
+}
+#text-input-2{
+    margin-left: 9px;
+    width: 268px;
+    height: 40px;
+    border-radius: 10px
+}
+.close-btn{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.card-popup1,.card-popup2 h1{
+    text-align: center;
+    margin: 0px;
+}
+.card-popup1,.card-popup2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+   
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top:10%;
+    left: 37%;
+    background-color: white;
+}
+
+
+#card-popup1{
+    display: none;
+    
+}
+#card-popup2{
+    display: none;
+}
+.add-btn{
+    margin: 10px;
+}
+.close-btn{
+    margin: 10px;
+}
+.static{
+
+    min-width: 250px;
+    /* height: 300px; */
+    min-height: 300px;
+    border-radius: 8px;
+    background-color: white;
+}
+.card{
+    text-align: center;
+    color: red;
+    font-size: 36px;
+    margin: 0;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: -1;
+    gap: 10px;
+ 
+}
+.btn
+{
+    margin-left: 50px
+}
+.btn1{
+    
+    /* top: 200px;
+    left: 100px; */
+    position: static;
+    bottom: -190px;
+    left: 109px;
+}
+.line-draw{
+    text-decoration: line-through;
+}
+.removeDonebutton{
+    display: none;
+}

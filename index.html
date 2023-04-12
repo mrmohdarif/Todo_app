@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <div class="task-bar">
+        <div><span class="task">Tasks</span><span class="list">List</span></div>
+        <div><span class="addbtn">+</span><span onclick="showAddCardPop()" class="addbtn">Add Item</span></div>
+        </div>
+      </nav>
+      <div class="card-container">
+        <!-- <div class="static">
+            <p class="card">MOHD ARIF</p>
+            <hr>
+            <ul>
+    
+            </ul>
+            <div >
+                <button>D</button>
+                <button>+</button>
+            </div>       
+        </div> -->
+     </div>
+    
+     <div class="card-popup1" id="card-popup1">
+        <div>
+            <h1>Add new task</h1>
+        </div>
+        <div>
+            <input type="text" name="" id="text-input" placeholder="Add new task">
+        </div> 
+         
+         <div class="btn">
+            <button class="add-btn" onclick="handleAddCard()">Add</button>
+            <button class="close-btn"  onclick="closeAddCardPop()">Close</button>
+         </div>   
+    </div>
+
+   
+
+    <div class="card-popup2" id="card-popup2">
+        <div>
+            <h1>Add new item</h1>
+        </div>
+        <div>
+            <input type="text" name="" id="text-input-2" placeholder="Add new item">
+        </div> 
+         
+         <div class="btn">
+            <button class="add-btn" onclick="addContentcardpop()">Add</button>
+            <button class="close-btn"  onclick="removeAddcontentcardPop()">Close</button>
+         </div>   
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
