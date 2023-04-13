@@ -40,7 +40,8 @@ border: none;
     width: 280px;
     height: 34px;
     margin-top: 20px;
-    border-radius: 5px;   
+    border-radius: 5px;
+  
 }
 #text-input-2{
     margin-left: 9px;
@@ -119,13 +120,36 @@ border: none;
     
     /* top: 200px;
     left: 100px; */
-    position: static;
+    /* position: static;
     bottom: -190px;
-    left: 109px;
+    left: 109px; */
+    margin-top: 150px;
+    margin-left: 140px;
+    margin-bottom: 20px;
 }
 .line-draw{
     text-decoration: line-through;
 }
 .removeDonebutton{
     display: none;
+}
+.checked{
+    text-decoration: line-through;
+    background-color: green;
+}
+.Delete-icon{
+    width: 25px;
+    height: 25px;
+}
+.Add-icons{
+    width: 25px;
+    height: 25px;
+}
+ul{
+    display: inline-block;
+
+}
+ul li{
+    margin-top: 10px;
+    font-size: 22px;
 }
