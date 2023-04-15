@@ -59,8 +59,8 @@ function renderCards(){
     let child="";
     for(i=0;i<data.length;i++)
     {
-        child+=`<div class="static" id=card_${data[i].id} onclick="external_card()" >
-        <h2 class="card">${data[i].cardTitle}</h2>
+        child+=`<div class="static" id=card_${data[i].id} >
+        <h2 class="card"  value="${data[i].cardTitle}" onclick="externalcard(${data[i].id},this.getAttribute('value'))">${data[i].cardTitle}</h2>
         <hr>
          <ul id="content_list_${data[i].id}">
          
@@ -176,6 +176,34 @@ for(i=0;i<data.length;i++)
     }
 }
 }
-function external_card(){
 
+function externalcard(id,value)
+{
+ const cardTitle=document.getElementById("title")
+  cardTitle.innerHTML=value
+  const cards=document.querySelectorAll(".static")
+  const cardShow=document.getElementById(`card_${id}`)
+cards.forEach(allcards=>{
+    allcards.style.display="none";
+})
+cardShow.style.display="block"
+const heading=document.querySelector("#heading")
+heading.style.display="none"
+const backButton=document.querySelector("#backBtn")
+backButton.style.display="block"
+}
+
+
+function mainPage()
+{
+    const cards=document.querySelectorAll(".static")
+    cards.forEach(allcards=>{
+        allcards.style.display="block";
+    })
+    const heading=document.querySelector("#heading")
+    heading.style.display="block"
+    const backButton=document.querySelector("#backBtn")
+    backButton.style.display="none"
+    const cardTitle=document.getElementById("title")
+    cardTitle.style.display="none"
 }
