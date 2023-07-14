@@ -79,10 +79,12 @@ border: none;
 
 #card-popup1{
     display: none;
+    margin-left: -120px
     
 }
 #card-popup2{
     display: none;
+    margin-left: -120px
 }
 .add-btn{
     margin: 10px;
@@ -173,3 +175,19 @@ font-size: 18px;
         
     }
 } */
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 45px 60px;
+    }
+    .addbtn 
+    {
+      font-size: 25px;
+    } 
+     .task
+     {
+        font-size: 25px;
+     }
+  }
