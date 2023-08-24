@@ -5,6 +5,7 @@ function showAddCardPop()
 {
     let Add_card_popup1=document.querySelector(".card-popup1")
     Add_card_popup1.style.display="block";
+    
 }
 // close add card
 function closeAddCardPop()
@@ -128,7 +129,7 @@ function addContentcardpop()
           newLi.appendChild(textNode); 
           console.log(uL);
             uL.appendChild(newLi)
-            newLi.className="checked"
+            newLi.className=""
             removeAddcontentcardPop()
             console.log("this is data",data);
             for(let i=0;i<data.length;i++)
@@ -207,3 +208,7 @@ function mainPage()
     const cardTitle=document.getElementById("title")
     cardTitle.style.display="none"
 }
+
+// function blurClick(){
+//     document.querySelector(".container").classList.add("container1")
+// }
