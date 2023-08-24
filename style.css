@@ -4,9 +4,12 @@ body
     background-color: skyblue;
 }
 .container{
- 
     margin: 50px 160px;
 }
+.container1{
+    filter: blur(1px);
+}
+
 .task{
 color: white;
 font-weight: bold;
@@ -75,16 +78,16 @@ border: none;
     left: 37%;
     background-color: white;
 }
-
-
+ 
 #card-popup1{
     display: none;
-    margin-left: -120px
+    margin-left: 0px;
+    z-index: 1;
     
 }
 #card-popup2{
     display: none;
-    margin-left: -120px
+    /* margin-left: -120px */
 }
 .add-btn{
     margin: 10px;
@@ -108,7 +111,7 @@ border: none;
 }
 .card-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     z-index: -1;
     gap: 10px;
@@ -159,7 +162,7 @@ ul li{
     color: blue;
     text-align: center;
     position: relative;
-    top: 1.5rem;
+    top: -0.5rem;
 
     font-size: 36px;
     
@@ -168,6 +171,7 @@ ul li{
 padding: 10px 20px;
 font-weight: bold;
 font-size: 18px;
+display: none;
 }
 
 /* @media only screen and (max-width: 500px){
@@ -190,4 +194,8 @@ font-size: 18px;
      {
         font-size: 25px;
      }
+     #card-popup1,#card-popup2{
+        margin-left: -120px;
+     }
+      
   }
